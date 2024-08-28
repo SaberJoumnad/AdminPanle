@@ -20,6 +20,7 @@
     --mainYellow: #f0ad4e;
     --mainRed: #d63939;
     --mainGreen : #2fb344;
+    --MainPurple : #ae3ec9;
 }
 body{
     font-family: 'Vazir' !important;
@@ -62,6 +63,9 @@ code {
 }
 .bg-light-Purple{
     background: var(--lightPurple);
+}
+.bg-Purple{
+    background: var(--MainPurple);
 }
 .bg-light-blue{
     background: var(--lightBlue);
@@ -261,6 +265,54 @@ code {
 .btn-pill {
     border-radius: 10rem;
 }
+.btn-hover {
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    /* padding: 16px 32px; */
+    padding: 10px 25px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 36px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+  
+  .btn-hover{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+  
+  .btn-hover:after {
+    content: '«';
+    position: absolute;
+    opacity: 0;  
+    top: 10px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn-hover:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+  .btn-hover:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
 /* main css */
 
 
