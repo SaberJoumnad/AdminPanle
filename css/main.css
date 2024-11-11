@@ -504,6 +504,9 @@ code {
 .mega-content-ms-2{
     margin-right: 20rem !important;
 }
+.dropdown-menu{
+    padding: 0.2 0;
+}
 .dropdown-item {
     min-width: 8rem;
     display: flex;
